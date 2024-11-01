@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Sorry to say but this page still needs many improvment like  -->
+<!-- Add responsive navigation bar -->
+<!-- Add responsive content bar (main body) -->
+<!-- It is a rigid webpage -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiping Wars</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <style>
+        /* Ensure box elements are positioned absolutely without overlapping */
+        #box1 {
+            top: 0;
+            width: 100%;
+
+        }
+        #box2 {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative h-screen overflow-hidden text-white">
+        <!-- Video Background -->
+        <video src="SailingShip.mp4" autoplay loop muted class="absolute inset-0 w-full h-full object-cover z-0 object-top"></video>
+
+        <!-- Box 1: Top Section -->
+        <div id="box1" class="absolute text-center flex flex-col lg:flex-row place-content-between items-center lg:px-4 ">
+            <div class="flex items-center">
+                <img src="boat-2024402_1280.png" class="w-20" alt="">
+                <h1 class="xl:text-5xl  text-4xl md:text-3xl font-bold pl-4">Shiping Wars</h1>
+            </div>
+            <div class="flex md:flex-col pr-4 py-0 xl:text-xl lg:text-lg md:text-lg pt-4">
+                <div class="flex md:flex-row flex-col justify-centers">  <!-- adding flex-col is not worth it try to add burger menu, like add new disign  -->
+                    <a href="#" class="hover:bg-amber-500 px-4 py-2 rounded-lg">Customer Portal</a>
+                    <a href="#" class="hover:bg-amber-500 px-4 py-2 rounded-lg">Services</a>
+                    <a href="#" class="hover:bg-amber-500 px-4 py-2 rounded-lg">About Us</a>
+                    <a href="#" class="hover:bg-amber-500 px-4 py-2 rounded-lg">News</a>
+                    <a href="#" class="hover:bg-amber-500 px-4 py-2 rounded-lg">Contact Us</a>
+                    <div class="flex items-center gap-0.5">
+                        <!-- Icon -->
+                        <i class="fa fa-phone text-white bg-amber-500 px-4 py-2 rounded-l-lg flex items-center leading-7 " aria-hidden="true"></i>
+                        <!-- Link -->
+                        <a href="#" class="text-white bg-amber-500 px-4 py-2 rounded-r-lg flex items-center">(123)456-7890</a>
+                      </div>
+                      
+                      
+                </div>
+                <div class="flex place-content-end items-center justify-centers text-lg"> 
+                    <label for="inp" class="relative block pr-4">
+                        Track Shipment
+                    </label>
+                    <div class="relative shipmentSearch">
+                        <input type="text" id="inp" autocomplete="off" placeholder="#Shipment_Id" class=" h-12 px-4 text-lg text-white bg-transparent focus:border-b-2 border-b-2 border-gray-300 focus:outline-none focus:border-amber-500 focus:placeholder-amber-500 transition duration-200 " />
+                        <i class="fa fa-search absolute right-8 bottom-4" aria-hidden="true"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <!-- Box 2: Bottom Section with Gradient -->
+        <div id="box2" class="absolute  text-center p-4 flex items-center justify-center ">
+            <div class="flex flex-col">
+                <!-- <p>Box 2 Content</p>
+                <div class="sm:bg-amber-500 md:bg-red-500 lg:bg-green-500 xl:bg-blue-500 2xl:bg-yellow-500 ">lol</div> -->
+                <p class="xl:text-8xl text-5xl font-black text-amber-500 ">End to End </p>
+                <p class="xl:text-8xl text-5xl font-light tracking-widest">Solutions</p>
+                <div class="flex gap-4" >
+                    <div>
+                        <img src="boat-2024402_1280.png" class="w-28 invert brightness-200" alt="">
+                    </div>
+                    <div>
+                        <p class="font-bold text-5xl">Form Asia</p>
+                        <p class="font-bold text-5xl">to the U.S.</p>
+                    </div>
+                </div>
+                <p class="font-bold text-3xl bg-amber-500 font-bold mt-4 px-4 py-2 rounded-lg">Fulfillment, customs and delivery </p>
+            </div>
+        </div>
+
+        <div class="footer absolute bottom-0 opacity-20 right-0">
+            <p>Video/Image by Pixabay.</p>
+        </div>
+    </div>
+</body>
+
+</html>
